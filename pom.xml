@@ -20,7 +20,7 @@
 
     <groupId>com.farmer</groupId>
     <artifactId>farmer-parent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
     <name>farmer</name>
     <description>Farmer</description>
 
@@ -28,6 +28,7 @@
         <!-- versions -->
         <java.version>1.8</java.version>
         <junit.version>4.12</junit.version>
+        <repository.url>49.235.131.110:8077</repository.url>
     </properties>
 
     <dependencies>
@@ -39,6 +40,45 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>farmer</id>
+            <url>http://${repository.url}/nexus/content/groups/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>farmer</id>
+            <url>http://${repository.url}/nexus/content/groups/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>farmer</id>
+            <name>Snapshots</name>
+            <url>http://${repository.url}/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>farmer</id>
+            <name>Releases</name>
+            <url>http://${repository.url}/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
 
     <build>
         <plugins>

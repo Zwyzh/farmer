@@ -8,7 +8,7 @@
     <parent>
         <artifactId>farmer-parent</artifactId>
         <groupId>com.farmer</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>1.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>farmer-system</artifactId>
@@ -17,7 +17,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.core</groupId>
+            <groupId>com.farmer</groupId>
             <artifactId>farmer-core</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
