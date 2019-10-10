@@ -15,4 +15,11 @@
     <name>${project.artifactId}</name>
     <description>系统调用监控封装</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.core</groupId>
+            <artifactId>farmer-core</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+    </dependencies>
 </project>
