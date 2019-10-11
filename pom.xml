@@ -10,6 +10,7 @@
         <module>farmer-db</module>
         <module>farmer-extra</module>
         <module>farmer-http</module>
+        <module>farmer-json</module>
         <module>farmer-log</module>
         <module>farmer-mq</module>
         <module>farmer-poi</module>
